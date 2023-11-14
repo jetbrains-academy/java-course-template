@@ -1,0 +1,9 @@
+type: edu
+custom_name: Course programming task
+files:
+  - name: test/Tests.java
+    visible: false
+  - name: src/main/java/org/jetbrains/academy/java/template/Main.java
+    visible: true
+  - name: src/main/java/org/jetbrains/academy/java/template/InvisibleFile.java
+    visible: false

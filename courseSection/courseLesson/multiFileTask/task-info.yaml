@@ -1,0 +1,11 @@
+type: output
+files:
+  - name: src/MainTaskFile.java
+    visible: true
+  - name: src/Main.java
+    visible: true
+
+  - name: test/output.txt
+    visible: false
+  - name: test/input.txt
+    visible: false

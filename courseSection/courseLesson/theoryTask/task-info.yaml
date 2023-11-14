@@ -1,0 +1,7 @@
+type: theory
+custom_name: Course theory task
+files:
+  - name: src/main/java/org/jetbrains/academy/java/template/Main.java
+    visible: true
+  - name: src/main/java/org/jetbrains/academy/java/template/InvisibleFile.java
+    visible: false
