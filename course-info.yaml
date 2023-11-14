@@ -1,0 +1,10 @@
+type: marketplace
+title: JetBrains Academy Java course template
+language: English
+summary: Here you can put the course description. You can use HTML tags inside the
+  description.
+programming_language: Java
+content:
+  - courseSection
+environment_settings:
+  jvm_language_level: JDK_17

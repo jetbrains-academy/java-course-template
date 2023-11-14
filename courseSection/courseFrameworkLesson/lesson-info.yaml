@@ -1,0 +1,6 @@
+type: framework
+custom_name: Course framework lesson
+content:
+  - theoryTask
+  - programmingTask
+is_template_based: false
