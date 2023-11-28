@@ -1,12 +1,12 @@
 package org.jetbrains.academy.java.template;
 
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
     public static String invokeSayHello(int howManyTimes) {
-        ArrayList<String> list = new ArrayList<>(Collections.nCopies(howManyTimes, "Hello"));
+        Collection<String> list = Collections.nCopies(howManyTimes, "Hello");
         return String.join(System.lineSeparator(), list);
     }
 

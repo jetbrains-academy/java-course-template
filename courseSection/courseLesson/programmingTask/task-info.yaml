@@ -5,5 +5,12 @@ files:
     visible: false
   - name: src/main/java/org/jetbrains/academy/java/template/Main.java
     visible: true
+    placeholders:
+      - offset: 220
+        length: 127
+        placeholder_text: // Write your solution here
+      - offset: 408
+        length: 213
+        placeholder_text: // Write your solution here
   - name: src/main/java/org/jetbrains/academy/java/template/InvisibleFile.java
     visible: false
