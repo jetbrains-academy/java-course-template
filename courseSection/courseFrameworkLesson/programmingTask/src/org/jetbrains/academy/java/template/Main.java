@@ -1,6 +1,6 @@
 package org.jetbrains.academy.java.template;
 
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
 // you can put the solution here
 public class Main {
     public static String invokeSayBye(int howManyTimes) {
-        ArrayList<String> list = new ArrayList<>(Collections.nCopies(howManyTimes, "Bye"));
+        Collection<String> list = Collections.nCopies(howManyTimes, "Bye");
         return String.join(System.lineSeparator(), list);
     }
 

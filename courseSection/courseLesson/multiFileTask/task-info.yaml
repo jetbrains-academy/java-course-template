@@ -1,11 +1,18 @@
 type: output
 files:
-  - name: src/MainTaskFile.java
-    visible: true
-  - name: src/Main.java
-    visible: true
-
   - name: test/output.txt
     visible: false
   - name: test/input.txt
     visible: false
+  - name: src/org/jetbrains/academy/java/template/MainTaskFile.java
+    visible: true
+    placeholders:
+      - offset: 120
+        length: 36
+        placeholder_text: // Write your solution here
+  - name: src/org/jetbrains/academy/java/template/Main.java
+    visible: true
+    placeholders:
+      - offset: 119
+        length: 26
+        placeholder_text: // Write your solution here
