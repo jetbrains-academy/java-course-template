@@ -33,7 +33,7 @@ public class Tests {
         invokeSayByeFunction = new TestMethod("invokeSayBye", new TestKotlinType("String", null,
                 false, emptyList()), arguments, null, Visibility.PUBLIC, false);
         mainClass = new TestClass("Main", "org.jetbrains.academy.java.template", Visibility.PUBLIC,
-                ClassType.CLASS, emptyList(), List.of(invokeSayByeFunction),false, emptyList(), emptyList());
+                ClassType.CLASS, emptyList(), List.of(invokeSayByeFunction), false, emptyList(), emptyList());
         mainClazz = mainClass.checkBaseDefinition();
     }
 
