@@ -90,4 +90,8 @@ configure(subprojects.filter { it.name != "common" }) {
     dependencies {
         implementation(project(":common"))
     }
+
+    tasks.register<Exec>("run") {
+        // Just do nothing to avoid the edu plugin errors
+    }
 }
