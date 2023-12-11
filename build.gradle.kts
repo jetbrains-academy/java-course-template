@@ -14,6 +14,10 @@ plugins {
 allprojects {
     repositories {
         mavenCentral()
+        maven {
+            // To be able to use the Kotlin test framework for the tests - https://github.com/jetbrains-academy/kotlin-test-framework
+            url = uri("https://packages.jetbrains.team/maven/p/kotlin-test-framework/kotlin-test-framework")
+        }
     }
 }
 
@@ -32,6 +36,9 @@ configure(subprojects) {
 
     // Include dependencies
     dependencies {
+        // By default, only the core module is included
+        implementation("org.jetbrains.academy.test.system:core:2.0.5")
+
         val junitJupiterVersion = "5.9.0"
         implementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
         runtimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")

@@ -6,7 +6,6 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
-import java.util.function.Function;
 
 public class CourseUtils {
     public static final String NEW_LINE_SEPARATOR = System.lineSeparator();
@@ -40,11 +39,11 @@ public class CourseUtils {
         }
     }
 
-    public static String runMainMethod(Function<String, String> mainMethod, String input, boolean toAssertSystemIn) {
+    public static String runMainMethod(Runnable mainMethod, String input, boolean toAssertSystemIn) {
         try {
             setSystemIn(input);
             ByteArrayOutputStream baos = setSystemOut();
-            mainMethod.apply(input);
+            mainMethod.run();
             if (toAssertSystemIn) {
                 if (isSystemInEmpty()) {
                     return "You are asking the user to enter data fewer times than required in the task!";
