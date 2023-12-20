@@ -1,6 +1,5 @@
 import org.jetbrains.academy.java.template.CourseUtils;
 import org.jetbrains.academy.java.template.Main;
-import org.jetbrains.academy.test.system.core.models.TestKotlinType;
 import org.jetbrains.academy.test.system.core.models.Visibility;
 import org.jetbrains.academy.test.system.core.models.classes.ClassType;
 import org.jetbrains.academy.test.system.core.models.classes.TestClass;
@@ -28,12 +27,23 @@ public class Tests {
 
     @BeforeAll
     static void beforeAll() {
-        List<TestVariable> arguments = List.of(new TestVariable("howManyTimes", "Int", null,
-                null, null, null, false, false, false));
-        invokeSayHelloFunction = new TestMethod("invokeSayHello", new TestKotlinType("String", null,
-                false, emptyList()), arguments, null, Visibility.PUBLIC, false);
-        mainClass = new TestClass("Main", "org.jetbrains.academy.java.template", Visibility.PUBLIC,
-                ClassType.CLASS, emptyList(), List.of(invokeSayHelloFunction),false, emptyList(), emptyList());
+        invokeSayHelloFunction = new TestMethod(
+                "invokeSayHello",
+                "String",
+                List.of(new TestVariable("howManyTimes", "Int")),
+                Visibility.PUBLIC
+        );
+        mainClass = new TestClass(
+                "Main",
+                "org.jetbrains.academy.java.template",
+                Visibility.PUBLIC,
+                ClassType.CLASS,
+                emptyList(),
+                List.of(invokeSayHelloFunction),
+                false,
+                emptyList(),
+                emptyList()
+        );
         mainClazz = mainClass.checkBaseDefinition();
     }
 
