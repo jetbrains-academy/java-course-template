@@ -37,7 +37,7 @@ configure(subprojects) {
     // Include dependencies
     dependencies {
         // By default, only the core module is included
-        implementation("org.jetbrains.academy.test.system:core:2.0.5")
+        implementation("org.jetbrains.academy.test.system:core:2.1.2")
 
         val junitJupiterVersion = "5.9.0"
         implementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
