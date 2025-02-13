@@ -8,3 +8,29 @@ content:
   - courseSection
 environment_settings:
   jvm_language_level: JDK_17
+additional_files:
+  - name: common/src/main/java/org/jetbrains/academy/java/template/CourseUtils.java
+  - name: common/src/main/resources/images/logo.png
+    is_binary: true
+  - name: common/src/main/resources/images/logo_dark.png
+    is_binary: true
+  - name: common/src/main/resources/images/files-order.gif
+    is_binary: true
+  - name: common/src/main/resources/images/theme-example.gif
+    is_binary: true
+  - name: common/src/main/resources/images/use_template_blur.jpg
+    is_binary: true
+  - name: common/src/main/resources/images/course-structure-author.png
+    is_binary: true
+  - name: common/src/main/resources/images/course-structure-student.png
+    is_binary: true
+  - name: common/src/main/resources/images/get-from-version-control.png
+    is_binary: true
+  - name: common/src/main/resources/images/run-debug-configurations.png
+    is_binary: true
+  - name: common/build.gradle.kts
+  - name: LICENSE
+  - name: build.gradle.kts
+  - name: gradle.properties
+  - name: settings.gradle.kts
+yaml_version: 2
