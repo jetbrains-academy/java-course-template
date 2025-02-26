@@ -33,4 +33,5 @@ additional_files:
   - name: build.gradle.kts
   - name: gradle.properties
   - name: settings.gradle.kts
+  - name: .idea/inspectionProfiles/Project_Default.xml
 yaml_version: 2
